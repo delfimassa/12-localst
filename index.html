@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- agregar etiquetas meta -->
+    <title>Localstorage</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Practica de localstorage</h1>
+                    <p class="lead">En este ejemplo practicaremos con un array de items almacenados en localstorage</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <article>
+                <h5>Ingrese el nombre de una serie</h5>
+                <div class="d-flex my-4">
+                    <input type="text" placeholder="ej: Friends" id="series" class="form-control" onkeyup="agregarSerie(event)">
+                    <button class="btn btn-outline-primary" onclick="nuevaSerie()">Agregar</button>
+                    <button class="btn btn-outline-danger" onclick="borrarTodo()">Borrar</button>
+                </div>
+            </article>
+            <article class="text-center">
+                <h5 class="display-4">Lista de series</h5>
+                <p class="font-weight-light">Seleccione el item de la lista que desea eliminar</p>
+
+                <ul class="list-group text-justify my-5" id="listaSeries">
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/practicaLocalstorage.js"></script>
+</body>
+
+</html>

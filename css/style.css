@@ -1,0 +1,6 @@
+li:hover{
+    background: lightskyblue;
+    cursor: pointer;
+    text-decoration-line: line-through;
+    /* text-decoration-line: underline; */
+}
