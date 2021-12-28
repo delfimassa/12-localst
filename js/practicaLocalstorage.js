@@ -5,13 +5,18 @@ leerSeries();
 function nuevaSerie(){
 
     let serie = document.getElementById('series').value;
-    arraySeries.push(serie);
+    if (serie !== ""){
+      arraySeries.push(serie);
     console.log(arraySeries);
     //guardar en localstorage
     localStorage.setItem("series", JSON.stringify(arraySeries));
     document.getElementById('series').value = "";
 
-    leerSeries();
+    leerSeries();  
+    }else{
+        alert("Please type something")
+    }
+    
 }
 
 function leerSeries(){

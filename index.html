@@ -21,18 +21,18 @@
             </div>
         </section>
         <section class="container">
-            <article>
+            <article class="text-center">
                 <h5>Ingrese el nombre de una serie</h5>
                 <div class="d-flex my-4">
-                    <input type="text" placeholder="ej: Friends" id="series" class="form-control" onkeyup="agregarSerie(event)">
+                    <input type="text" placeholder="ej: Friends" id="series" class="form-control"
+                        onkeyup="agregarSerie(event)">
                     <button class="btn btn-outline-primary" onclick="nuevaSerie()">Agregar</button>
-                    <button class="btn btn-outline-danger" onclick="borrarTodo()">Borrar odo</button>
                 </div>
             </article>
             <article class="text-center">
                 <h5 class="display-4">Lista de series</h5>
                 <p class="font-weight-light">Seleccione el item de la lista que desea eliminar</p>
-
+                <button class="btn btn-outline-danger" onclick="borrarTodo()">Borrar todo</button>
                 <ul class="list-group text-justify my-5" id="listaSeries">
                 </ul>
             </article>
