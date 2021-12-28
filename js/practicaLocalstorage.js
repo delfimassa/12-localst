@@ -31,6 +31,7 @@ function leerSeries(){
             // li.className = 'list-group-item';
             // li.id = item;
             // li.addEventListener("click", function(){itemSeleccionado(item)})
+            // se escribe solo click, a dif de en html que se pone el on
             // ulSeries.appendChild(li);
 
             // opcion 2
@@ -58,7 +59,7 @@ function borrarSeries(){
 }
 
 function agregarSerie(event) {
-   // console.log(event);
+   console.log(event);
     if(event.keyCode == 13){
         nuevaSerie();
     }
@@ -68,6 +69,7 @@ function borrarTodo() {
     localStorage.clear();
     borrarSeries();
     arraySeries= [];
+    document.getElementById('series').value = "";
 }
 
 function itemSeleccionado(pitem){
